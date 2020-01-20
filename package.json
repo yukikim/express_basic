@@ -1,0 +1,18 @@
+{
+  "name": "express_basic",
+  "version": "1.0.0",
+  "description": "Basic Express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express"
+  ],
+  "author": "T.Kimura",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "express": "^4.17.1"
+  }
+}
