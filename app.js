@@ -21,23 +21,25 @@ app.use(function(req, res, next) {
 })
 
 //todo:ルーティング
-// app.get('/', (req, res) => {
-//     res.send('Hello World!')
+app.get('/', (req, res) => {
+    console.dir(req.query.name)
+    let param = req.query.name
+    res.send('Hello ' + param + ' さん!')
+})
+
+// app.use('/', require('./routes/index'))
+//
+// app.post('/', (req, res) => {
+//     res.send('Got a POST request!')
 // })
-
-app.use('/', require('./routes/index'))
-
-app.post('/', (req, res) => {
-    res.send('Got a POST request!')
-})
-
-app.put('/user', (req, res) => {
-    res.send('Got a PUT request at /user')
-})
-
-app.delete('/user', (req, res) => {
-    res.send('Got a DELETE request at /user')
-})
+//
+// app.put('/user', (req, res) => {
+//     res.send('Got a PUT request at /user')
+// })
+//
+// app.delete('/user', (req, res) => {
+//     res.send('Got a DELETE request at /user')
+// })
 
 const port = '3000'
 app.listen(port, () => console.log('Express Server Start on port ' + port))
