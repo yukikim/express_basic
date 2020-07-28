@@ -3,6 +3,9 @@
 node.js のExpressモジュールを使ってウェブアプリを構築します。
 
 Expressの基本を学びます
+### Express インストール
+- npm init
+- npm install express ejs --save
 
 #### POSTリクエストコマンド
     curl -X POST -H "Content-Type: application/json" -d '{"name":"kimura", "gender":"male"}' localhost:3000
