@@ -83,6 +83,14 @@ app.get('/', (req, res) => {
     getApi(param)
 })
 
+//todo:ejsテンプレート使用
+app.get('/test', (req, res) => {
+    
+    res.render('test', { //todo: 'test' >> /views/test.ejs
+        message: 'Hello'
+    })
+})
+
 // app.use('/', require('./routes/index'))
 
 app.post('/', (req, res) => {
